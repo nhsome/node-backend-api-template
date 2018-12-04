@@ -1,0 +1,29 @@
+{
+  "name": "backend-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "pm2 reload ecosystem.config.js --env development && pm2 logs",
+    "start": "pm2 reload ecosystem.config.js --env production"
+  },
+  "author": "Alex Shor (nhsome@ya.ru)",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "express-fileupload": "^1.0.0",
+    "json2xls": "^0.1.2",
+    "jsonwebtoken": "^8.4.0",
+    "kue": "^0.11.6",
+    "lodash": "^4.17.11",
+    "md5": "^2.2.1",
+    "minimist": "^1.2.0",
+    "moment": "^2.22.2",
+    "mysql2": "^1.6.4",
+    "sequelize": "^4.41.2",
+    "sequelize-auto-migrations": "^1.0.2",
+    "standard-http-error": "^2.0.1"
+  }
+}

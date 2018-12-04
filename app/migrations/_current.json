@@ -1,0 +1,40 @@
+{
+    "tables": {
+        "Users": {
+            "tableName": "Users",
+            "schema": {
+                "id": {
+                    "allowNull": false,
+                    "primaryKey": true,
+                    "autoIncrement": true,
+                    "seqType": "Sequelize.INTEGER"
+                },
+                "login": {
+                    "seqType": "Sequelize.STRING"
+                },
+                "passwordHash": {
+                    "seqType": "Sequelize.STRING"
+                },
+                "firstName": {
+                    "seqType": "Sequelize.STRING"
+                },
+                "lastName": {
+                    "seqType": "Sequelize.STRING"
+                },
+                "role": {
+                    "seqType": "Sequelize.ENUM('ADMIN', 'FARMER')"
+                },
+                "createdAt": {
+                    "allowNull": false,
+                    "seqType": "Sequelize.DATE"
+                },
+                "updatedAt": {
+                    "allowNull": false,
+                    "seqType": "Sequelize.DATE"
+                }
+            },
+            "indexes": []
+        }
+    },
+    "revision": 1
+}
